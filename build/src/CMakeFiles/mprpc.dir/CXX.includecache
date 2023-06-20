@@ -22,15 +22,15 @@ lockqueue.h
 string
 -
 
-../src/include/mprpcapplication.h
-mprpcconfig.h
-../src/include/mprpcconfig.h
-mprpcchannel.h
-../src/include/mprpcchannel.h
-mprpccontroller.h
-../src/include/mprpccontroller.h
+../src/include/myrpcapplication.h
+myrpcconfig.h
+../src/include/myrpcconfig.h
+myrpcchannel.h
+../src/include/myrpcchannel.h
+myrpccontroller.h
+../src/include/myrpccontroller.h
 
-../src/include/mprpcchannel.h
+../src/include/myrpcchannel.h
 google/protobuf/service.h
 -
 google/protobuf/descriptor.h
@@ -38,13 +38,13 @@ google/protobuf/descriptor.h
 google/protobuf/message.h
 -
 
-../src/include/mprpcconfig.h
+../src/include/myrpcconfig.h
 unordered_map
 -
 string
 -
 
-../src/include/mprpccontroller.h
+../src/include/myrpccontroller.h
 google/protobuf/service.h
 -
 string
@@ -116,17 +116,17 @@ zookeeper/zookeeper.h
 string
 -
 
-/home/tony/projects/mprpc/src/logger.cc
+/home/tony/projects/myrpc/src/logger.cc
 logger.h
-/home/tony/projects/mprpc/src/logger.h
+/home/tony/projects/myrpc/src/logger.h
 time.h
 -
 iostream
 -
 
-/home/tony/projects/mprpc/src/mprpcapplication.cc
-mprpcapplication.h
-/home/tony/projects/mprpc/src/mprpcapplication.h
+/home/tony/projects/myrpc/src/myrpcapplication.cc
+myrpcapplication.h
+/home/tony/projects/myrpc/src/myrpcapplication.h
 iostream
 -
 unistd.h
@@ -134,13 +134,13 @@ unistd.h
 string
 -
 
-/home/tony/projects/mprpc/src/mprpcchannel.cc
-mprpcchannel.h
-/home/tony/projects/mprpc/src/mprpcchannel.h
+/home/tony/projects/myrpc/src/myrpcchannel.cc
+myrpcchannel.h
+/home/tony/projects/myrpc/src/myrpcchannel.h
 string
 -
 rpcheader.pb.h
-/home/tony/projects/mprpc/src/rpcheader.pb.h
+/home/tony/projects/myrpc/src/rpcheader.pb.h
 sys/types.h
 -
 sys/socket.h
@@ -153,28 +153,28 @@ unistd.h
 -
 errno.h
 -
-mprpcapplication.h
-/home/tony/projects/mprpc/src/mprpcapplication.h
-mprpccontroller.h
-/home/tony/projects/mprpc/src/mprpccontroller.h
+myrpcapplication.h
+/home/tony/projects/myrpc/src/myrpcapplication.h
+myrpccontroller.h
+/home/tony/projects/myrpc/src/myrpccontroller.h
 zookeeperutil.h
-/home/tony/projects/mprpc/src/zookeeperutil.h
+/home/tony/projects/myrpc/src/zookeeperutil.h
 
-/home/tony/projects/mprpc/src/mprpcconfig.cc
-mprpcconfig.h
-/home/tony/projects/mprpc/src/mprpcconfig.h
+/home/tony/projects/myrpc/src/myrpcconfig.cc
+myrpcconfig.h
+/home/tony/projects/myrpc/src/myrpcconfig.h
 iostream
 -
 string
 -
 
-/home/tony/projects/mprpc/src/mprpccontroller.cc
-mprpccontroller.h
-/home/tony/projects/mprpc/src/mprpccontroller.h
+/home/tony/projects/myrpc/src/myrpccontroller.cc
+myrpccontroller.h
+/home/tony/projects/myrpc/src/myrpccontroller.h
 
-/home/tony/projects/mprpc/src/rpcheader.pb.cc
+/home/tony/projects/myrpc/src/rpcheader.pb.cc
 rpcheader.pb.h
-/home/tony/projects/mprpc/src/rpcheader.pb.h
+/home/tony/projects/myrpc/src/rpcheader.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -196,23 +196,23 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/tony/projects/mprpc/src/rpcprovider.cc
+/home/tony/projects/myrpc/src/rpcprovider.cc
 rpcprovider.h
-/home/tony/projects/mprpc/src/rpcprovider.h
-mprpcapplication.h
-/home/tony/projects/mprpc/src/mprpcapplication.h
+/home/tony/projects/myrpc/src/rpcprovider.h
+myrpcapplication.h
+/home/tony/projects/myrpc/src/myrpcapplication.h
 rpcheader.pb.h
-/home/tony/projects/mprpc/src/rpcheader.pb.h
+/home/tony/projects/myrpc/src/rpcheader.pb.h
 logger.h
-/home/tony/projects/mprpc/src/logger.h
+/home/tony/projects/myrpc/src/logger.h
 zookeeperutil.h
-/home/tony/projects/mprpc/src/zookeeperutil.h
+/home/tony/projects/myrpc/src/zookeeperutil.h
 
-/home/tony/projects/mprpc/src/zookeeperutil.cc
+/home/tony/projects/myrpc/src/zookeeperutil.cc
 zookeeperutil.h
-/home/tony/projects/mprpc/src/zookeeperutil.h
-mprpcapplication.h
-/home/tony/projects/mprpc/src/mprpcapplication.h
+/home/tony/projects/myrpc/src/zookeeperutil.h
+myrpcapplication.h
+/home/tony/projects/myrpc/src/myrpcapplication.h
 semaphore.h
 -
 iostream

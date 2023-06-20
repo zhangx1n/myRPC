@@ -1,10 +1,10 @@
-#include "mprpcconfig.h"
+#include "myrpcconfig.h"
 
 #include <iostream>
 #include <string>
 
 // 负责解析加载配置文件
-void MprpcConfig::LoadConfigFile(const char *config_file)
+void myrpcConfig::LoadConfigFile(const char *config_file)
 {
     FILE *pf = fopen(config_file, "r");
     if (nullptr == pf)
@@ -52,7 +52,7 @@ void MprpcConfig::LoadConfigFile(const char *config_file)
 }
 
 // 查询配置项信息
-std::string MprpcConfig::Load(const std::string &key)
+std::string myrpcConfig::Load(const std::string &key)
 {
     auto it = m_configMap.find(key);
     if (it == m_configMap.end())
@@ -63,7 +63,7 @@ std::string MprpcConfig::Load(const std::string &key)
 }
 
 // 去掉字符串前后的空格
-void MprpcConfig::Trim(std::string &src_buf)
+void myrpcConfig::Trim(std::string &src_buf)
 {
     int idx = src_buf.find_first_not_of(' ');
     if (idx != -1)

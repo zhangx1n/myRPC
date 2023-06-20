@@ -1,16 +1,16 @@
-#include "mprpcapplication.h"
+#include "myrpcapplication.h"
 #include <iostream>
 #include <unistd.h>
 #include <string>
 
-MprpcConfig MprpcApplication::m_config;
+myrpcConfig myrpcApplication::m_config;
 
 void ShowArgsHelp()
 {
     std::cout<<"format: command -i <configfile>" << std::endl;
 }
 
-void MprpcApplication::Init(int argc, char **argv)
+void myrpcApplication::Init(int argc, char **argv)
 {
     if (argc < 2)
     {
@@ -47,13 +47,13 @@ void MprpcApplication::Init(int argc, char **argv)
     // std::cout << "zookeeperport:" << m_config.Load("zookeeperport") << std::endl;
 }
 
-MprpcApplication& MprpcApplication::GetInstance()
+myrpcApplication& myrpcApplication::GetInstance()
 {
-    static MprpcApplication app;
+    static myrpcApplication app;
     return app;
 }
 
-MprpcConfig& MprpcApplication::GetConfig()
+myrpcConfig& myrpcApplication::GetConfig()
 {
     return m_config;
 }

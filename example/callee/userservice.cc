@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "user.pb.h"
-#include "mprpcapplication.h"
+#include "myrpcapplication.h"
 #include "rpcprovider.h"
 
 /*
@@ -73,7 +73,7 @@ public:
 int main(int argc, char **argv)
 {
     // 调用框架的初始化操作
-    MprpcApplication::Init(argc, argv);
+    myrpcApplication::Init(argc, argv);
 
     // provider是一个rpc网络服务对象。把UserService对象发布到rpc节点上
     RpcProvider provider;

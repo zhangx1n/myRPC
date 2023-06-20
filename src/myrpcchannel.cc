@@ -1,4 +1,4 @@
-#include "mprpcchannel.h"
+#include "myrpcchannel.h"
 #include <string>
 #include "rpcheader.pb.h"
 #include <sys/types.h>
@@ -7,15 +7,15 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <errno.h>
-#include "mprpcapplication.h"
-#include "mprpccontroller.h"
+#include "myrpcapplication.h"
+#include "myrpccontroller.h"
 #include "zookeeperutil.h"
 
 /*
 header_size + service_name method_name args_size + args
 */
 // 所有通过stub代理对象调用的rpc方法，都走到这里了，统一做rpc方法调用的数据数据序列化和网络发送 
-void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
+void myrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
                                 google::protobuf::RpcController* controller, 
                                 const google::protobuf::Message* request,
                                 google::protobuf::Message* response,
@@ -39,7 +39,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
     
     // 定义rpc的请求header
-    mprpc::RpcHeader rpcHeader;
+    myrpc::RpcHeader rpcHeader;
     rpcHeader.set_service_name(service_name);
     rpcHeader.set_method_name(method_name);
     rpcHeader.set_args_size(args_size);
@@ -82,8 +82,8 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
 
     // 读取配置文件rpcserver的信息
-    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
-    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    // std::string ip = myrpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    // uint16_t port = atoi(myrpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     // rpc调用方想调用service_name的method_name服务，需要查询zk上该服务所在的host信息
     ZkClient zkCli;
     zkCli.Start();

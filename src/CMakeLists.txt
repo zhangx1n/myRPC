@@ -1,12 +1,12 @@
 #aux_source_directory(. SRC_LIST)
 set(SRC_LIST 
-    mprpcapplication.cc 
-    mprpcconfig.cc 
+    myrpcapplication.cc 
+    myrpcconfig.cc 
     rpcheader.pb.cc 
     rpcprovider.cc 
-    mprpcchannel.cc
-    mprpccontroller.cc
+    myrpcchannel.cc
+    myrpccontroller.cc
     logger.cc
     zookeeperutil.cc)
-add_library(mprpc ${SRC_LIST})
-target_link_libraries(mprpc muduo_net muduo_base pthread zookeeper_mt)
+add_library(myrpc ${SRC_LIST})
+target_link_libraries(myrpc muduo_net muduo_base pthread zookeeper_mt)

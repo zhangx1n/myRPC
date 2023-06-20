@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "../../lib/libmprpc.a"
+  "../../lib/libmyrpc.a"
 )

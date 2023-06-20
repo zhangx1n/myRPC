@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tony/projects/mprpc
+CMAKE_SOURCE_DIR = /home/tony/projects/myrpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tony/projects/mprpc/build
+CMAKE_BINARY_DIR = /home/tony/projects/myrpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tony/projects/mprpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tony/projects/mprpc/build/CMakeFiles /home/tony/projects/mprpc/build/src/CMakeFiles/progress.marks
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/projects/mprpc/build/CMakeFiles 0
+	cd /home/tony/projects/myrpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tony/projects/myrpc/build/CMakeFiles /home/tony/projects/myrpc/build/src/CMakeFiles/progress.marks
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tony/projects/myrpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,33 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tony/projects/mprpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tony/projects/myrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/mprpc.dir/rule:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mprpc.dir/rule
-.PHONY : src/CMakeFiles/mprpc.dir/rule
+src/CMakeFiles/myrpc.dir/rule:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/myrpc.dir/rule
+.PHONY : src/CMakeFiles/myrpc.dir/rule
 
 # Convenience name for target.
-mprpc: src/CMakeFiles/mprpc.dir/rule
+myrpc: src/CMakeFiles/myrpc.dir/rule
 
-.PHONY : mprpc
+.PHONY : myrpc
 
 # fast build rule for target.
-mprpc/fast:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/build
-.PHONY : mprpc/fast
+myrpc/fast:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/build
+.PHONY : myrpc/fast
 
 logger.o: logger.cc.o
 
@@ -131,7 +131,7 @@ logger.o: logger.cc.o
 
 # target to build an object file
 logger.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.o
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/logger.cc.o
 .PHONY : logger.cc.o
 
 logger.i: logger.cc.i
@@ -140,7 +140,7 @@ logger.i: logger.cc.i
 
 # target to preprocess a source file
 logger.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.i
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/logger.cc.i
 .PHONY : logger.cc.i
 
 logger.s: logger.cc.s
@@ -149,116 +149,116 @@ logger.s: logger.cc.s
 
 # target to generate assembly for a file
 logger.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/logger.cc.s
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/logger.cc.s
 .PHONY : logger.cc.s
 
-mprpcapplication.o: mprpcapplication.cc.o
+myrpcapplication.o: myrpcapplication.cc.o
 
-.PHONY : mprpcapplication.o
-
-# target to build an object file
-mprpcapplication.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o
-.PHONY : mprpcapplication.cc.o
-
-mprpcapplication.i: mprpcapplication.cc.i
-
-.PHONY : mprpcapplication.i
-
-# target to preprocess a source file
-mprpcapplication.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.i
-.PHONY : mprpcapplication.cc.i
-
-mprpcapplication.s: mprpcapplication.cc.s
-
-.PHONY : mprpcapplication.s
-
-# target to generate assembly for a file
-mprpcapplication.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcapplication.cc.s
-.PHONY : mprpcapplication.cc.s
-
-mprpcchannel.o: mprpcchannel.cc.o
-
-.PHONY : mprpcchannel.o
+.PHONY : myrpcapplication.o
 
 # target to build an object file
-mprpcchannel.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o
-.PHONY : mprpcchannel.cc.o
+myrpcapplication.cc.o:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcapplication.cc.o
+.PHONY : myrpcapplication.cc.o
 
-mprpcchannel.i: mprpcchannel.cc.i
+myrpcapplication.i: myrpcapplication.cc.i
 
-.PHONY : mprpcchannel.i
+.PHONY : myrpcapplication.i
 
 # target to preprocess a source file
-mprpcchannel.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cc.i
-.PHONY : mprpcchannel.cc.i
+myrpcapplication.cc.i:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcapplication.cc.i
+.PHONY : myrpcapplication.cc.i
 
-mprpcchannel.s: mprpcchannel.cc.s
+myrpcapplication.s: myrpcapplication.cc.s
 
-.PHONY : mprpcchannel.s
+.PHONY : myrpcapplication.s
 
 # target to generate assembly for a file
-mprpcchannel.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcchannel.cc.s
-.PHONY : mprpcchannel.cc.s
+myrpcapplication.cc.s:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcapplication.cc.s
+.PHONY : myrpcapplication.cc.s
 
-mprpcconfig.o: mprpcconfig.cc.o
+myrpcchannel.o: myrpcchannel.cc.o
 
-.PHONY : mprpcconfig.o
+.PHONY : myrpcchannel.o
 
 # target to build an object file
-mprpcconfig.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o
-.PHONY : mprpcconfig.cc.o
+myrpcchannel.cc.o:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcchannel.cc.o
+.PHONY : myrpcchannel.cc.o
 
-mprpcconfig.i: mprpcconfig.cc.i
+myrpcchannel.i: myrpcchannel.cc.i
 
-.PHONY : mprpcconfig.i
+.PHONY : myrpcchannel.i
 
 # target to preprocess a source file
-mprpcconfig.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.i
-.PHONY : mprpcconfig.cc.i
+myrpcchannel.cc.i:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcchannel.cc.i
+.PHONY : myrpcchannel.cc.i
 
-mprpcconfig.s: mprpcconfig.cc.s
+myrpcchannel.s: myrpcchannel.cc.s
 
-.PHONY : mprpcconfig.s
+.PHONY : myrpcchannel.s
 
 # target to generate assembly for a file
-mprpcconfig.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpcconfig.cc.s
-.PHONY : mprpcconfig.cc.s
+myrpcchannel.cc.s:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcchannel.cc.s
+.PHONY : myrpcchannel.cc.s
 
-mprpccontroller.o: mprpccontroller.cc.o
+myrpcconfig.o: myrpcconfig.cc.o
 
-.PHONY : mprpccontroller.o
+.PHONY : myrpcconfig.o
 
 # target to build an object file
-mprpccontroller.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o
-.PHONY : mprpccontroller.cc.o
+myrpcconfig.cc.o:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcconfig.cc.o
+.PHONY : myrpcconfig.cc.o
 
-mprpccontroller.i: mprpccontroller.cc.i
+myrpcconfig.i: myrpcconfig.cc.i
 
-.PHONY : mprpccontroller.i
+.PHONY : myrpcconfig.i
 
 # target to preprocess a source file
-mprpccontroller.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.i
-.PHONY : mprpccontroller.cc.i
+myrpcconfig.cc.i:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcconfig.cc.i
+.PHONY : myrpcconfig.cc.i
 
-mprpccontroller.s: mprpccontroller.cc.s
+myrpcconfig.s: myrpcconfig.cc.s
 
-.PHONY : mprpccontroller.s
+.PHONY : myrpcconfig.s
 
 # target to generate assembly for a file
-mprpccontroller.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/mprpccontroller.cc.s
-.PHONY : mprpccontroller.cc.s
+myrpcconfig.cc.s:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpcconfig.cc.s
+.PHONY : myrpcconfig.cc.s
+
+myrpccontroller.o: myrpccontroller.cc.o
+
+.PHONY : myrpccontroller.o
+
+# target to build an object file
+myrpccontroller.cc.o:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpccontroller.cc.o
+.PHONY : myrpccontroller.cc.o
+
+myrpccontroller.i: myrpccontroller.cc.i
+
+.PHONY : myrpccontroller.i
+
+# target to preprocess a source file
+myrpccontroller.cc.i:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpccontroller.cc.i
+.PHONY : myrpccontroller.cc.i
+
+myrpccontroller.s: myrpccontroller.cc.s
+
+.PHONY : myrpccontroller.s
+
+# target to generate assembly for a file
+myrpccontroller.cc.s:
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/myrpccontroller.cc.s
+.PHONY : myrpccontroller.cc.s
 
 rpcheader.pb.o: rpcheader.pb.cc.o
 
@@ -266,7 +266,7 @@ rpcheader.pb.o: rpcheader.pb.cc.o
 
 # target to build an object file
 rpcheader.pb.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcheader.pb.cc.o
 .PHONY : rpcheader.pb.cc.o
 
 rpcheader.pb.i: rpcheader.pb.cc.i
@@ -275,7 +275,7 @@ rpcheader.pb.i: rpcheader.pb.cc.i
 
 # target to preprocess a source file
 rpcheader.pb.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.i
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcheader.pb.cc.i
 .PHONY : rpcheader.pb.cc.i
 
 rpcheader.pb.s: rpcheader.pb.cc.s
@@ -284,7 +284,7 @@ rpcheader.pb.s: rpcheader.pb.cc.s
 
 # target to generate assembly for a file
 rpcheader.pb.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.s
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcheader.pb.cc.s
 .PHONY : rpcheader.pb.cc.s
 
 rpcprovider.o: rpcprovider.cc.o
@@ -293,7 +293,7 @@ rpcprovider.o: rpcprovider.cc.o
 
 # target to build an object file
 rpcprovider.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.o
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcprovider.cc.o
 .PHONY : rpcprovider.cc.o
 
 rpcprovider.i: rpcprovider.cc.i
@@ -302,7 +302,7 @@ rpcprovider.i: rpcprovider.cc.i
 
 # target to preprocess a source file
 rpcprovider.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.i
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcprovider.cc.i
 .PHONY : rpcprovider.cc.i
 
 rpcprovider.s: rpcprovider.cc.s
@@ -311,7 +311,7 @@ rpcprovider.s: rpcprovider.cc.s
 
 # target to generate assembly for a file
 rpcprovider.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/rpcprovider.cc.s
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/rpcprovider.cc.s
 .PHONY : rpcprovider.cc.s
 
 zookeeperutil.o: zookeeperutil.cc.o
@@ -320,7 +320,7 @@ zookeeperutil.o: zookeeperutil.cc.o
 
 # target to build an object file
 zookeeperutil.cc.o:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/zookeeperutil.cc.o
 .PHONY : zookeeperutil.cc.o
 
 zookeeperutil.i: zookeeperutil.cc.i
@@ -329,7 +329,7 @@ zookeeperutil.i: zookeeperutil.cc.i
 
 # target to preprocess a source file
 zookeeperutil.cc.i:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.i
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/zookeeperutil.cc.i
 .PHONY : zookeeperutil.cc.i
 
 zookeeperutil.s: zookeeperutil.cc.s
@@ -338,7 +338,7 @@ zookeeperutil.s: zookeeperutil.cc.s
 
 # target to generate assembly for a file
 zookeeperutil.cc.s:
-	cd /home/tony/projects/mprpc/build && $(MAKE) -f src/CMakeFiles/mprpc.dir/build.make src/CMakeFiles/mprpc.dir/zookeeperutil.cc.s
+	cd /home/tony/projects/myrpc/build && $(MAKE) -f src/CMakeFiles/myrpc.dir/build.make src/CMakeFiles/myrpc.dir/zookeeperutil.cc.s
 .PHONY : zookeeperutil.cc.s
 
 # Help Target
@@ -348,23 +348,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... mprpc"
+	@echo "... myrpc"
 	@echo "... edit_cache"
 	@echo "... logger.o"
 	@echo "... logger.i"
 	@echo "... logger.s"
-	@echo "... mprpcapplication.o"
-	@echo "... mprpcapplication.i"
-	@echo "... mprpcapplication.s"
-	@echo "... mprpcchannel.o"
-	@echo "... mprpcchannel.i"
-	@echo "... mprpcchannel.s"
-	@echo "... mprpcconfig.o"
-	@echo "... mprpcconfig.i"
-	@echo "... mprpcconfig.s"
-	@echo "... mprpccontroller.o"
-	@echo "... mprpccontroller.i"
-	@echo "... mprpccontroller.s"
+	@echo "... myrpcapplication.o"
+	@echo "... myrpcapplication.i"
+	@echo "... myrpcapplication.s"
+	@echo "... myrpcchannel.o"
+	@echo "... myrpcchannel.i"
+	@echo "... myrpcchannel.s"
+	@echo "... myrpcconfig.o"
+	@echo "... myrpcconfig.i"
+	@echo "... myrpcconfig.s"
+	@echo "... myrpccontroller.o"
+	@echo "... myrpccontroller.i"
+	@echo "... myrpccontroller.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tony/projects/mprpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tony/projects/myrpc/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
